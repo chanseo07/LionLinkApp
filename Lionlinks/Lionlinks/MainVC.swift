@@ -10,9 +10,11 @@ import UIKit
 
 class MainVC: UITableViewController {
 
+    @IBOutlet var table: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.table.delegate = self
+        self.table.dataSource = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -89,6 +91,46 @@ class MainVC: UITableViewController {
             return "Students"
         }
     }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch "\(indexPath.section)\(indexPath.row)" {
+        case "00":
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "healthVC")
+            self.navigationController?.pushViewController(vc!, animated: true)
+            break
+        case "01":
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "mailVC")
+            self.navigationController?.pushViewController(vc!, animated: true)
+            break
+        case "10":
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "scheduleVC")
+            self.navigationController?.pushViewController(vc!, animated: true)
+            break
+        case "11":
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "commentsVC")
+            self.navigationController?.pushViewController(vc!, animated: true)
+            break
+        case "12":
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "yearscheduleVC")
+            self.navigationController?.pushViewController(vc!, animated: true)
+            break
+        case "13":
+            break
+        case "14":
+            break
+        case "15":
+            break
+        case "16":
+            break
+        case "17":
+            break
+            default:
+                print("no")
+            }
+    }
+    
+
     
 
     /*

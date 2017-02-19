@@ -90,11 +90,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UJy-bs-WGZ" id="2RD-uy-VT4">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c3m-5h-JdC">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -109,13 +109,118 @@
                             <outlet property="delegate" destination="lGN-ci-eCy" id="Xpz-qi-UGQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Lion Links" id="cg4-Lc-eQe">
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="LS2-ma-FVf"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Lion Links" id="cg4-Lc-eQe"/>
+                    <connections>
+                        <outlet property="table" destination="gZ8-Rh-mUI" id="XVJ-p9-COs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiP-lW-Gla" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1698" y="142"/>
+        </scene>
+        <!--MailVC-->
+        <scene sceneID="YSS-Rt-xVL">
+            <objects>
+                <viewController storyboardIdentifier="mailVC" id="lkg-BH-ZPW" customClass="MailVC" customModule="Lionlinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wn2-op-Jpt"/>
+                        <viewControllerLayoutGuide type="bottom" id="bmO-3J-D4e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U0Y-pQ-EnD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNK-Ry-HUA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2564" y="190"/>
+        </scene>
+        <!--ScheduleVC-->
+        <scene sceneID="PJN-NX-vHT">
+            <objects>
+                <viewController storyboardIdentifier="scheduleVC" id="9ZQ-SC-F9N" customClass="ScheduleVC" customModule="Lionlinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W0c-vw-gLj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Au2-cD-zn8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RFL-Gm-Xdp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNd-Hr-Y3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3315" y="188"/>
+        </scene>
+        <!--Year ScheduleVC-->
+        <scene sceneID="7aB-Rs-r8q">
+            <objects>
+                <viewController storyboardIdentifier="yearscheduleVC" id="mYl-dk-REL" customClass="YearScheduleVC" customModule="Lionlinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wMl-0g-X9P"/>
+                        <viewControllerLayoutGuide type="bottom" id="82N-cb-JSm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="22E-2i-Bba">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xp6-c8-XzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4030" y="189"/>
+        </scene>
+        <!--HealthVC-->
+        <scene sceneID="AeU-zf-454">
+            <objects>
+                <viewController storyboardIdentifier="healthVC" id="mUg-X6-DsO" customClass="HealthVC" customModule="Lionlinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JNM-tR-hhF"/>
+                        <viewControllerLayoutGuide type="bottom" id="KnO-Mn-raD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i2n-8z-Z6H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5WP-65-9cI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="pdf" destination="5WP-65-9cI" id="qcn-vh-cHc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0tE-9R-TYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572" y="-499"/>
+        </scene>
+        <!--CommentsVC-->
+        <scene sceneID="rKd-uz-Ron">
+            <objects>
+                <viewController storyboardIdentifier="commentsVC" id="MET-x0-2GU" customClass="CommentsVC" customModule="Lionlinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fpv-Do-cmo"/>
+                        <viewControllerLayoutGuide type="bottom" id="evR-ma-9mh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2wz-44-HC0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5AD-dP-45y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3314" y="-500"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5tY-cd-IBJ">

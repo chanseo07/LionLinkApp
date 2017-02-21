@@ -1,5 +1,4 @@
 target “Lionlinks” do
  use_frameworks!
- pod ‘Alamofire’, ‘~> 3.0’
  pod ‘Kanna’, ‘~> 2.1.0’
 end

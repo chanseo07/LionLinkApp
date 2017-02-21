@@ -7,12 +7,31 @@
 //
 
 import UIKit
+import Kanna
 
 class MailVC: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let html = "<html><head><title>titlfdae</title></head><body>hi</body></html>"
+        
+        if let doc = HTML(html: html, encoding: .utf8) {
+            print(doc.title)
+            
+//            // Search for nodes by CSS
+//            for link in doc.css("a, link") {
+//                print(link.text)
+//                print(link["href"])
+//            }
+//            
+//            // Search for nodes by XPath
+//            for link in doc.xpath("//a | //link") {
+//                print(link.text)
+//                print(link["href"])
+//            }
+        }
         // Do any additional setup after loading the view.
     }
 

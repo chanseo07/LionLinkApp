@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346C21E5025F1F7015295423 /* Pods_Lionlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D94087F3366639C9AC7C827 /* Pods_Lionlinks.framework */; };
 		F10C836B1E4A3C5000B53DC3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C836A1E4A3C5000B53DC3 /* LoginVC.swift */; };
 		F10C836D1E4A3C7300B53DC3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C836C1E4A3C7300B53DC3 /* MainVC.swift */; };
 		F164094C1E5A5D7300CC4CED /* HealthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164094B1E5A5D7300CC4CED /* HealthVC.swift */; };
@@ -40,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8AB7BBCD185036E45D59D615 /* Pods-Lionlinks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lionlinks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lionlinks/Pods-Lionlinks.release.xcconfig"; sourceTree = "<group>"; };
+		9D94087F3366639C9AC7C827 /* Pods_Lionlinks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lionlinks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BC0F2F9848092790AC8389 /* Pods-Lionlinks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lionlinks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lionlinks/Pods-Lionlinks.debug.xcconfig"; sourceTree = "<group>"; };
 		F10C836A1E4A3C5000B53DC3 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
 		F10C836C1E4A3C7300B53DC3 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F164094B1E5A5D7300CC4CED /* HealthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthVC.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346C21E5025F1F7015295423 /* Pods_Lionlinks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		303E28F9390A170AAC0E5F3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6BC0F2F9848092790AC8389 /* Pods-Lionlinks.debug.xcconfig */,
+				8AB7BBCD185036E45D59D615 /* Pods-Lionlinks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA580C0AFEC7E40208FFED4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D94087F3366639C9AC7C827 /* Pods_Lionlinks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1BBAF071E48D89E00FBF151 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +115,8 @@
 				F1BBAF271E48D89E00FBF151 /* LionlinksTests */,
 				F1BBAF321E48D89E00FBF151 /* LionlinksUITests */,
 				F1BBAF111E48D89E00FBF151 /* Products */,
+				303E28F9390A170AAC0E5F3B /* Pods */,
+				CA580C0AFEC7E40208FFED4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1BBAF381E48D89E00FBF151 /* Build configuration list for PBXNativeTarget "Lionlinks" */;
 			buildPhases = (
+				C66B2906BF4582B2026234EB /* [CP] Check Pods Manifest.lock */,
 				F1BBAF0C1E48D89E00FBF151 /* Sources */,
 				F1BBAF0D1E48D89E00FBF151 /* Frameworks */,
 				F1BBAF0E1E48D89E00FBF151 /* Resources */,
+				C92442540DE451DE65E4129B /* [CP] Embed Pods Frameworks */,
+				AA2D84CF8076289250FA98D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +301,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA2D84CF8076289250FA98D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lionlinks/Pods-Lionlinks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C66B2906BF4582B2026234EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C92442540DE451DE65E4129B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lionlinks/Pods-Lionlinks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F1BBAF0C1E48D89E00FBF151 /* Sources */ = {
@@ -437,6 +512,7 @@
 		};
 		F1BBAF391E48D89E00FBF151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6BC0F2F9848092790AC8389 /* Pods-Lionlinks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6C8TCRC5L;
@@ -450,6 +526,7 @@
 		};
 		F1BBAF3A1E48D89E00FBF151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AB7BBCD185036E45D59D615 /* Pods-Lionlinks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6C8TCRC5L;

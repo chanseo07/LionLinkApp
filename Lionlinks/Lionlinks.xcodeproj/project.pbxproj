@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		346C21E5025F1F7015295423 /* Pods_Lionlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D94087F3366639C9AC7C827 /* Pods_Lionlinks.framework */; };
+		B9DB1BA61E5D417B00731FAE /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = B9DB1BA51E5D417B00731FAE /* data.txt */; };
+		B9DB1BAE1E5D463F00731FAE /* absence.html in Resources */ = {isa = PBXBuildFile; fileRef = B9DB1BA91E5D463F00731FAE /* absence.html */; };
+		B9DB1BAF1E5D463F00731FAE /* academicYear.html in Resources */ = {isa = PBXBuildFile; fileRef = B9DB1BAA1E5D463F00731FAE /* academicYear.html */; };
+		B9DB1BB01E5D463F00731FAE /* classSchedule.html in Resources */ = {isa = PBXBuildFile; fileRef = B9DB1BAB1E5D463F00731FAE /* classSchedule.html */; };
+		B9DB1BB11E5D463F00731FAE /* mailroom.html in Resources */ = {isa = PBXBuildFile; fileRef = B9DB1BAC1E5D463F00731FAE /* mailroom.html */; };
+		B9DB1BB21E5D463F00731FAE /* recentGrades.html in Resources */ = {isa = PBXBuildFile; fileRef = B9DB1BAD1E5D463F00731FAE /* recentGrades.html */; };
 		F10C836B1E4A3C5000B53DC3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C836A1E4A3C5000B53DC3 /* LoginVC.swift */; };
 		F10C836D1E4A3C7300B53DC3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C836C1E4A3C7300B53DC3 /* MainVC.swift */; };
 		F164094C1E5A5D7300CC4CED /* HealthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164094B1E5A5D7300CC4CED /* HealthVC.swift */; };
@@ -43,6 +49,12 @@
 /* Begin PBXFileReference section */
 		8AB7BBCD185036E45D59D615 /* Pods-Lionlinks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lionlinks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lionlinks/Pods-Lionlinks.release.xcconfig"; sourceTree = "<group>"; };
 		9D94087F3366639C9AC7C827 /* Pods_Lionlinks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lionlinks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9DB1BA51E5D417B00731FAE /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		B9DB1BA91E5D463F00731FAE /* absence.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = absence.html; sourceTree = "<group>"; };
+		B9DB1BAA1E5D463F00731FAE /* academicYear.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = academicYear.html; sourceTree = "<group>"; };
+		B9DB1BAB1E5D463F00731FAE /* classSchedule.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = classSchedule.html; sourceTree = "<group>"; };
+		B9DB1BAC1E5D463F00731FAE /* mailroom.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mailroom.html; sourceTree = "<group>"; };
+		B9DB1BAD1E5D463F00731FAE /* recentGrades.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = recentGrades.html; sourceTree = "<group>"; };
 		C6BC0F2F9848092790AC8389 /* Pods-Lionlinks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lionlinks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lionlinks/Pods-Lionlinks.debug.xcconfig"; sourceTree = "<group>"; };
 		F10C836A1E4A3C5000B53DC3 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
 		F10C836C1E4A3C7300B53DC3 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -133,12 +145,18 @@
 		F1BBAF121E48D89E00FBF151 /* Lionlinks */ = {
 			isa = PBXGroup;
 			children = (
+				B9DB1BA91E5D463F00731FAE /* absence.html */,
+				B9DB1BAA1E5D463F00731FAE /* academicYear.html */,
+				B9DB1BAB1E5D463F00731FAE /* classSchedule.html */,
+				B9DB1BAC1E5D463F00731FAE /* mailroom.html */,
+				B9DB1BAD1E5D463F00731FAE /* recentGrades.html */,
 				F10C836A1E4A3C5000B53DC3 /* LoginVC.swift */,
 				F1BBAF131E48D89E00FBF151 /* AppDelegate.swift */,
 				F10C836C1E4A3C7300B53DC3 /* MainVC.swift */,
 				F1EDEE8B1E5A65BD002D4978 /* YearScheduleVC.swift */,
 				F1EDEE891E5A6571002D4978 /* CommentsVC.swift */,
 				F1EDEE851E5A64DD002D4978 /* MailVC.swift */,
+				B9DB1BA51E5D417B00731FAE /* data.txt */,
 				F1EDEE871E5A64F0002D4978 /* ScheduleVC.swift */,
 				F1BBAF171E48D89E00FBF151 /* Main.storyboard */,
 				F164094B1E5A5D7300CC4CED /* HealthVC.swift */,
@@ -280,9 +298,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DB1BB11E5D463F00731FAE /* mailroom.html in Resources */,
+				B9DB1BA61E5D417B00731FAE /* data.txt in Resources */,
 				F1BBAF1E1E48D89E00FBF151 /* LaunchScreen.storyboard in Resources */,
+				B9DB1BAE1E5D463F00731FAE /* absence.html in Resources */,
+				B9DB1BB01E5D463F00731FAE /* classSchedule.html in Resources */,
 				F1BBAF1B1E48D89E00FBF151 /* Assets.xcassets in Resources */,
+				B9DB1BAF1E5D463F00731FAE /* academicYear.html in Resources */,
 				F1BBAF191E48D89E00FBF151 /* Main.storyboard in Resources */,
+				B9DB1BB21E5D463F00731FAE /* recentGrades.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

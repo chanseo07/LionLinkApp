@@ -16,31 +16,6 @@ class MailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Save data to file
-        let fileName = "Test"
-        let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-        
-        let fileURL = DocumentDirURL.appendingPathComponent(fileName).appendingPathExtension("txt")
-        //print("FilePath: \(fileURL.path)")
-        
-        let writeString = "Write this text to the fileURL as text in iOS using Swift"
-        do {
-            // Write to the file
-            try writeString.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
-        } catch let error as NSError {
-            print("Failed writing to URL: \(fileURL), Error: " + error.localizedDescription)
-        }
-        
-        var readString = "" // Used to store the file contents
-        do {
-            // Read the file contents
-            readString = try String(contentsOf: fileURL)
-        } catch let error as NSError {
-            print("Failed reading from URL: \(fileURL), Error: " + error.localizedDescription)
-        }
-        //print("File Text: \(readString)")
-        
-        /*** Read from project txt file ***/
         
         // File location
         let fileURLProject = Bundle.main.path(forResource: "mailroom", ofType: "html")
@@ -49,45 +24,43 @@ class MailVC: UIViewController {
         do {
             readStringProject = try String(contentsOfFile: fileURLProject!, encoding: String.Encoding.utf8)
         } catch let error as NSError {
-            print("Failed reading from URL: \(fileURL), Error: " + error.localizedDescription)
+            print("Failed reading from URL: \(fileURLProject), Error: " + error.localizedDescription)
         }
         
         //print(readStringProject)
         
         let htmlToBeUsed = readStringProject
         
+        returnMailInfo (numberSentence: htmlToBeUsed)
         
         
-        
-        
-        ////////////////////////////////////
-        var html = "<html> <body> hi </body> </html>"
-        
-
-        //Outputs text body of the html file.
-        if let doc = HTML(html: htmlToBeUsed, encoding: .utf8) {
-            var rawBody = doc.body!.content
-            print (rawBody!)
-            return
-        }
-        
-        //Next section is in charge of chaning text to array
-        
-        //Declaring Variables to be used
-        var box = 0000
-        var a = 0
-        var b = 0
-        var c = 0
-        var comboArray = [box,a,b,c]
-        
-        
-        // Do any additional setup after loading the view.
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    
+    func returnMailInfo (numberSentence: String){ //Gonna need help getting this to return an array
+        
+        var arrayToReturn:[String]
+
+        if let boxNumber = numberSentence.range(of: "[0-9][0-9][0-9][0-9]  ", options: .regularExpression) {
+            let word = numberSentence[boxNumber.lowerBound..<boxNumber.upperBound]
+            print(word) //word is the boxnumber
+        }
+        
+        if let combo = numberSentence.range(of: "[A-Z][0-9][0-9]-[A-Z][0-9][0-9]-[A-Z][0-9][0-9]", options: .regularExpression) {
+            let wordX = numberSentence[combo.lowerBound..<combo.upperBound]
+            print (wordX) //wordX is the combination
+        }
+        
+        return
+        
+        //
     }
     
     
